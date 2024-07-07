@@ -30,7 +30,7 @@ li {
     justify-content: center;
 }
 
-body, #info-container {
+body, #info-container, .card, #quote-container {
     display: flex;
     flex-direction: column;
 }
@@ -42,7 +42,7 @@ body, #info-container {
     display: flex;
 }
 
-#header-container {
+#header-container, #signup-container {
     justify-content: space-between;
 }
 
@@ -74,20 +74,26 @@ p.main-desc {
     margin: 0 0 8px 0;
 }
 
-button {
+#signup-container, button {
     background-color: #3882f6;
+}
+
+button {
     border-radius: 8px;
     padding: 8px 32px;
     border: none;
+    font-weight: 900;
 }
 
 #info-container {
     margin: 32px 0;
     padding: 0 256px;
     align-items: center;
+
+    text-align: center;
 }
 
-.card-container, .card {
+.card-container{
     display: flex;
 }
 
@@ -97,9 +103,6 @@ button {
 }
 
 .card {
-    flex-direction: column;
-    align-items: center;
-
     width: 150px;
     text-align: center;
     font-size: 18px;
@@ -112,7 +115,37 @@ button {
     border-radius: 10%;
 }
 
+#quote-container {
+    background-color: #e5e7eb;
+    padding: 64px 256px;
+}
 
+.quote-text {
+    font-style: italic;
+    text-align: justify;
+    font-weight: 300;
+    font-size: 36px;
+    color: #1f2937;
+}
+
+.quote-name {
+    text-align: right;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+#signup-container {
+    margin: 64px 200px;
+    padding: 32px 56px;
+    border-radius: 10px;
+    color: white;
+
+    display: flex;
+}
+
+.signup-btn {
+    border: 2px solid;
+}
 
 footer {
     justify-content: center;
